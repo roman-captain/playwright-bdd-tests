@@ -1,0 +1,32 @@
+{
+  "name": "playwright-bdd-tests",
+  "version": "1.0.0",
+  "description": "BDD test automation with Playwright, TypeScript and Gherkin",
+  "scripts": {
+    "test": "bddgen && playwright test",
+    "test:smoke": "bddgen && playwright test --grep @smoke",
+    "test:regression": "bddgen && playwright test --grep @regression",
+    "test:headed": "bddgen && playwright test --headed",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
+  },
+  "keywords": [
+    "playwright",
+    "bdd",
+    "cucumber",
+    "gherkin",
+    "typescript",
+    "automation"
+  ],
+  "author": "Roman Horodnichev",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.9.0",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "allure-playwright": "^3.9.0",
+    "playwright-bdd": "^8.5.1",
+    "typescript": "^6.0.3"
+  }
+}

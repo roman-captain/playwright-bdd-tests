@@ -1,0 +1,8 @@
+node_modules/
+.playwright-bdd/
+.features-gen/
+allure-results/
+allure-report/
+test-results/
+playwright-report/
+.DS_Store
